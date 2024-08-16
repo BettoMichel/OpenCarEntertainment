@@ -1,30 +1,30 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("divPlaylist").style.display = "none";
     document.getElementById("divYoutube").style.display = "none";
     document.getElementById("divGPS").style.display = "none";
 
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/sw.js', { scope: '/' });
+        navigator.serviceWorker.register('/OpenCarEntertainment/sw.js', { scope: '/OpenCarEntertainment/' });
     }
 
 
-    // Función para actualizar el estado de la conexión
+    // Funci�n para actualizar el estado de la conexi�n
     function updateOnlineStatus() {
         const statusElement = document.getElementById('status');
         if (navigator.onLine) {
-            statusElement.textContent = "Estás en línea";
+            statusElement.textContent = "Est�s en l�nea";
             statusElement.className = 'online';
         } else {
-            statusElement.textContent = "Estás fuera de línea";
+            statusElement.textContent = "Est�s fuera de l�nea";
             statusElement.className = 'offline';
         }
     }
 
-    // Escucha los eventos de cambio de estado de conexión
+    // Escucha los eventos de cambio de estado de conexi�n
     window.addEventListener('online', updateOnlineStatus);
     window.addEventListener('offline', updateOnlineStatus);
 
-    // Llama a la función al cargar la página
+    // Llama a la funci�n al cargar la p�gina
     updateOnlineStatus();
 });
 
