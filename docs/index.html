@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--<link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2" />-->
+    <link href="css/site.css" rel="stylesheet" />
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <p id="status"></p>
+    <h1>OpenCar Entertainment</h1>
+    <ul>
+        <li onclick="Playlist_Show();">My PLaylist</li>
+        <li onclick="Youtube_Show();">Youtube</li>
+        <li onclick="GPS_Show();">GPS - Maps</li>
+    </ul>
+    <div id="divPlaylist">
+        <h1>My Playlist</h1>
+    </div>
+    <div id="divYoutube">
+        <h1>Youtube</h1>
+    </div>
+    <div id="divGPS">
+        <h1>Map</h1>
+    </div>
+
+    <!--<form id="converter">
+        <label for="input-temp">temperature</label>
+        <input type="text" id="input-temp" name="input-temp" value="20" />
+        <label for="input-unit">from</label>
+        <select id="input-unit" name="input-unit">
+            <option value="c" selected>Celsius</option>
+            <option value="f">Fahrenheit</option>
+            <option value="k">Kelvin</option>
+        </select>
+        <label for="output-unit">to</label>
+        <select id="output-unit" name="output-unit">
+            <option value="c">Celsius</option>
+            <option value="f" selected>Fahrenheit</option>
+            <option value="k">Kelvin</option>
+        </select>
+        <output name="output-temp" id="output-temp" for="input-temp input-unit output-unit">68 F</output>
+    </form>-->
+
+    <script src="js/site.js"></script>
+</body>
+</html>
